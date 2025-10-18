@@ -1,1 +1,81 @@
-profilecard-0.netlify.appprofilecard-0.netlify.app
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/7d12dbc7b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <article data-testid="test-profile-card">
+        <div class="avatar-section">
+            <figure data-testid="test-user-avatar" aria-label="User Image">
+                <img src="img/avatar.png" alt="Jane Bird Avatar">
+                <figcaption>Jane Bird - Frontend Developer</figcaption>
+            </figure>
+            <div class="about-user">
+                <h2 data-testid="test-user-name" aria-label="User Name">Jane Bird</h2>
+                <p data-testid="test-user-bio" aria-label="User Bio">A passionate developer and tech enthusiast who
+                    loves turning creative ideas into functional, user-friendly digital solutions.</p>
+
+                <ul data-testid="test-user-social-links" aria-label="User Social Media Links" class="social-links">
+                    <li data-testid="test-user-social-facebook">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-square-facebook user-icons"></i>
+                        </a>
+                    </li>
+                    <li data-testid="test-user-social-twitter">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-square-twitter user-icons"></i>
+                        </a>
+                    </li>
+                    <li data-testid="test-user-social-linkedin">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin user-icons"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="sections">
+            <section>
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies" aria-label="User Hobbies">
+                    <li class="l-one">Coding</li>
+                    <li class="l-two">Baking cookies</li>
+                    <li class="l-three">Gaming</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes" aria-label="User Dislikes">
+                    <li class="l-four">Dogs</li>
+                    <li class="l-five">Loud places</li>
+                    <li class="l-six">Bugs</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="fun-fact">
+            <div class="fun-fact-header">
+                <i class="fa-solid fa-lightbulb fun-fact-icon"></i>
+                <h4>Fun fact</h4>
+            </div>
+            <p>It's exactly <span data-testid="test-user-time" id="clock"></span> milliseconds since 1970! Crazy, right?
+            </p>
+
+        </div>
+    </article>
+    <script src="index.js"></script>
+</body>
+
+</html>
