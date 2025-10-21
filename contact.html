@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/7d12dbc7b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="contact">
+    
+    <form action="/" id="form" novalidate>
+        <h2>Contact Us</h2>
+        <fieldset class="input-control">
+            <label for="name">Name:</label>
+            <input data-testid="test-contact-name" aria-describedby="name-error" type="text" id="name" name="name" required>
+            <span data-testid="test-contact-error-name" id="name-error" class="error" ></span>
+        </fieldset>
+
+        <fieldset class="input-control">
+            <label for="email">Email:</label>
+            <input data-testid="test-contact-email" aria-describedby="email-error" type="email" id="email" name="email" required>
+            <span data-testid="test-contact-error-email" id="email-error" class="error"></span>
+        </fieldset>
+
+        <fieldset class="input-control">
+            <label for="subject">Subject:</label>
+            <input data-testid="test-contact-subject" aria-describedby="subject-error" type="text" id="subject" name="subject" required>
+            <span data-testid="test-contact-error-subject" id="subject-error" class="error"></span>
+        </fieldset>
+
+        <fieldset class="input-control">
+            <label for="message">Message:</label>
+            <textarea data-testid="test-contact-message" aria-describedby="message-error" id="message" name="message" rows="4" minlength="10"
+                required></textarea>
+            <span data-testid="test-contact-error-message" id="message-error" class="error"></span>
+        </fieldset>
+
+        <button data-testid="test-contact-submit" type="submit" id="submit">Submit</button>
+    </form>
+    <div data-testid="test-contact-success" id="success-modal" class="modal">
+        <div class="modal-content">
+            <h2>Form Submitted Successfully</h2>
+            <p>Your message has been sent. Thank you!</p>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+    
+    <script src="contact.js"></script>
+</body>
+
+</html>

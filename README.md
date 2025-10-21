@@ -58,12 +58,6 @@ npx live-server
 
 ---
 
-## **Preview**
-
-![Profile Card Screenshot](img/Screenshot-1.png)
-
----
-
 ## **Future Improvements**
 
 * Add dark/light mode toggle
